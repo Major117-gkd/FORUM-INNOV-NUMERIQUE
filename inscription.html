@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire | Forum de l'Innovation Numérique Labé</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-graphic">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5L95 50L50 95L5 50L50 5Z" stroke="#2ECC8A" stroke-width="2" />
+                    <path d="M50 25L75 50L50 75L25 50L50 25Z" stroke="#2ECC8A" stroke-width="1.5" opacity="0.6" />
+                    <line x1="50" y1="5" x2="50" y2="95" stroke="#2ECC8A" stroke-width="1" opacity="0.4" />
+                    <line x1="5" y1="50" x2="95" y2="50" stroke="#2ECC8A" stroke-width="1" opacity="0.4" />
+                    <circle cx="50" cy="5" r="3" fill="#2ECC8A" />
+                    <circle cx="95" cy="50" r="3" fill="#2ECC8A" />
+                    <circle cx="50" cy="95" r="3" fill="#2ECC8A" />
+                    <circle cx="5" cy="50" r="3" fill="#2ECC8A" />
+                    <circle cx="50" cy="50" r="5" fill="#2ECC8A" />
+                    <path d="M15 15L35 35" stroke="#2ECC8A" stroke-width="1" stroke-linecap="round" opacity="0.5" />
+                    <circle cx="15" cy="15" r="2" fill="#2ECC8A" opacity="0.5" />
+                </svg>
+            </div>
+            <div class="logo-text-wrapper">
+                <div class="logo-main">FORUM INNOV</div>
+                <div class="logo-sub">NUMÉRIQUE</div>
+                <div class="logo-bottom">UNIVERSITÉ DE LABÉ - 2026</div>
+            </div>
+        </a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="inscription.html" class="active">Inscription</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="inscription.html" class="btn-cta">S'inscrire &#8594;</a>
+            </div>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <header class="register-hero reveal">
+        <div class="container">
+            <div class="hero-badge">ACCÈS GRATUIT</div>
+            <h1>Rejoignez l'Aventure</h1>
+            <p>Inscrivez-vous dès maintenant pour réserver votre place et recevoir votre badge numérique.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="register-container">
+                <!-- Registration Form -->
+                <div class="form-card glass">
+                    <form id="registration-form">
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label for="firstname">Prénom</label>
+                                <input type="text" id="firstname" name="firstname" required placeholder="Ex: Mamadou">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nom</label>
+                                <input type="text" id="lastname" name="lastname" required placeholder="Ex: Diallo">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votrename@exemple.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role">Vous êtes ?</label>
+                            <select id="role" name="role" required>
+                                <option value="">Sélectionnez votre profil</option>
+                                <option value="student">Étudiant</option>
+                                <option value="entrepreneur">Entrepreneur</option>
+                                <option value="professional">Professionnel</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interests">Intérêts principaux</label>
+                            <textarea id="interests" name="interests" rows="3"
+                                placeholder="Qu'attendez-vous du forum ?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-cta btn-full mt-1">Confirmer mon inscription</button>
+                    </form>
+                </div>
+
+                <!-- Contact & Map -->
+                <div class="contact-info">
+                    <div class="info-item glass">
+                        <h4>Localisation</h4>
+                        <p>Département Informatique, Campus de Hafia, Université de Labé, Guinée.</p>
+                    </div>
+
+                    <div class="map-container glass">
+                        <iframe title="Localisation de l'Université de Labé"
+                            src="https://maps.google.com/maps?q=Universit%C3%A9%20de%20Lab%C3%A9%2C%20Hafia%2C%20Guin%C3%A9e&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="info-item glass">
+                        <h4>Besoin d'aide ?</h4>
+                        <p>Email: contact@univ-labe.edu.gn</p>
+                        <p>Tél: +224 629 00 58 07</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="nav-logo">
+                        <div class="logo-graphic">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 5L95 50L50 95L5 50L50 5Z" stroke="#2ECC8A" stroke-width="2" />
+                                <circle cx="50" cy="50" r="5" fill="#2ECC8A" />
+                            </svg>
+                        </div>
+                        <div class="logo-text-wrapper">
+                            <div class="logo-main">FORUM INNOV</div>
+                            <div class="logo-sub">NUMÉRIQUE</div>
+                        </div>
+                    </div>
+                    <p class="hero-slogan">« Innove. Entreprends. Connecte-toi. »</p>
+                    <p>Favoriser l'entreprenariat et l'innovation technologique en Moyenne-Guinée.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="inscription.html">Inscription</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: contact@unilab-forum.gn</li>
+                        <li>Tél: +224 629 00 58 07</li>
+                        <li>Lieu: 8PF6+78 Labé, Guinée</li>
+                        <li>Site Web: <a href="https://univ-labe.edu.gn/" target="_blank"
+                                rel="noopener">univ-labe.edu.gn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Université de Labé - Forum de l'Innovation Numérique. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = this;
+            form.innerHTML = `
+                <div class="text-center py-5">
+                    <div class="success-icon" style="font-size: 5rem; color: var(--accent-color); margin-bottom: 2rem;">&#10004;</div>
+                    <h3 style="color: #fff; margin-bottom: 1rem;">Inscription validée !</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Félicitations ! Vous êtes officiellement inscrit au Forum FINEO 2026. Un email de confirmation contenant votre badge vous sera envoyé à <strong>${form.email.value}</strong>.</p>
+                    <a href="index.html" class="btn-cta btn-outline">Retour à l'accueil</a>
+                </div>
+            `;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme | Forum de l'Innovation Numérique Labé</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <a href="index.html" class="nav-logo">
+            <div class="logo-graphic">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5L95 50L50 95L5 50L50 5Z" stroke="#2ECC8A" stroke-width="2"/>
+                    <path d="M50 25L75 50L50 75L25 50L50 25Z" stroke="#2ECC8A" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="50" y1="5" x2="50" y2="95" stroke="#2ECC8A" stroke-width="1" opacity="0.4"/>
+                    <line x1="5" y1="50" x2="95" y2="50" stroke="#2ECC8A" stroke-width="1" opacity="0.4"/>
+                    <circle cx="50" cy="5" r="3" fill="#2ECC8A"/>
+                    <circle cx="95" cy="50" r="3" fill="#2ECC8A"/>
+                    <circle cx="50" cy="95" r="3" fill="#2ECC8A"/>
+                    <circle cx="5" cy="50" r="3" fill="#2ECC8A"/>
+                    <circle cx="50" cy="50" r="5" fill="#2ECC8A"/>
+                    <path d="M15 15L35 35" stroke="#2ECC8A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+                    <circle cx="15" cy="15" r="2" fill="#2ECC8A" opacity="0.5"/>
+                </svg>
+            </div>
+            <div class="logo-text-wrapper">
+                <div class="logo-main">FORUM INNOV</div>
+                <div class="logo-sub">NUMÉRIQUE</div>
+                <div class="logo-bottom">UNIVERSITÉ DE LABÉ - 2026</div>
+            </div>
+        </a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html" class="active">Programme</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="inscription.html" class="btn-cta">S'inscrire &#8594;</a>
+            </div>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <header class="programme-hero reveal">
+        <div class="container">
+            <div class="hero-badge">AGENDA 2026</div>
+            <h1>Programme du Forum</h1>
+            <p>Deux jours de partage, d'innovation et de networking au cœur de Labé.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active">Tout</button>
+                <button class="filter-btn">Panels</button>
+                <button class="filter-btn">Formations</button>
+                <button class="filter-btn">Hackathon</button>
+                <button class="filter-btn">Présentation de projets</button>
+                <button class="filter-btn">Conférences</button>
+            </div>
+
+            <div class="timeline">
+                <!-- Jour 1 -->
+                <div class="day-separator">
+                    <span class="day-label">&#128197; Jour 1 &mdash; Innovation &amp; Savoirs</span>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">09:00</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Cérémonie</span>
+                        <h3 class="event-title">Ouverture Officielle du Forum</h3>
+                        <div class="event-location">Amphithéâtre Principal &mdash; Université de Labé</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">10:30</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Panel</span>
+                        <h3 class="event-title">L'Innovation Numérique en Afrique de l'Ouest : enjeux et opportunités</h3>
+                        <div class="event-speaker">Mariama Barry &amp; Ousmane Sylla — Experts invités</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">12:00</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Conférence</span>
+                        <h3 class="event-title">L'IA au service de l'agriculture en Moyenne-Guinée</h3>
+                        <div class="event-speaker">Mamadou Diallo — Expert IA, Tech Hub Guinea</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">14:30</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Formation</span>
+                        <h3 class="event-title">Design Thinking — De l'idée au prototype en 3 heures</h3>
+                        <div class="event-speaker">Marie Camara — Mentor Startup &amp; Innovation</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">17:00</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Formation</span>
+                        <h3 class="event-title">Initiation au Développement Web &amp; Mobile</h3>
+                        <div class="event-speaker">Équipe Tech — Atelier pratique</div>
+                    </div>
+                </div>
+
+                <!-- Jour 2 -->
+                <div class="day-separator">
+                    <span class="day-label">&#128197; Jour 2 &mdash; Comp&eacute;tition &amp; Pitch</span>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">08:00</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Hackathon</span>
+                        <h3 class="event-title">Lancement du Hackathon — 24h d'Innovation</h3>
+                        <div class="event-location">Salle Informatique &mdash; Bâtiment B</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">10:00</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Panel</span>
+                        <h3 class="event-title">Entrepreneuriat Étudiant : témoignages de fondateurs guinéens</h3>
+                        <div class="event-speaker">3 Fondateurs de startups locales</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">14:00</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Présentation de projets</span>
+                        <h3 class="event-title">Pitch des Équipes Finalistes — Tour de qualification</h3>
+                        <div class="event-speaker">10 projets &mdash; 5 minutes par équipe</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">16:30</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Présentation de projets</span>
+                        <h3 class="event-title">Grande Finale &amp; Remise des Prix</h3>
+                        <div class="event-location">Amphithéâtre Principal</div>
+                    </div>
+                </div>
+
+                <div class="event-item reveal">
+                    <div class="event-time">18:00</div>
+                    <div class="event-dot"></div>
+                    <div class="event-content glass">
+                        <span class="event-tag">Networking</span>
+                        <h3 class="event-title">Cocktail &amp; Rencontres Partenaires</h3>
+                        <div class="event-location">Esplanade de l'Université</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="nav-logo">
+                        <div class="logo-graphic">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 5L95 50L50 95L5 50L50 5Z" stroke="#2ECC8A" stroke-width="2"/>
+                                <circle cx="50" cy="50" r="5" fill="#2ECC8A"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text-wrapper">
+                            <div class="logo-main">FORUM INNOV</div>
+                            <div class="logo-sub">NUMÉRIQUE</div>
+                        </div>
+                    </div>
+                    <p class="hero-slogan">« Innove. Entreprends. Connecte-toi. »</p>
+                    <p>Favoriser l'entreprenariat et l'innovation technologique en Moyenne-Guinée.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="inscription.html">Inscription</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: contact@unilab-forum.gn</li>
+                        <li>Tél: +224 629 00 58 07</li>
+                        <li>Lieu: 8PF6+78 Labé, Guinée</li>
+                        <li>Site Web: <a href="https://univ-labe.edu.gn/" target="_blank" rel="noopener">univ-labe.edu.gn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Université de Labé - Forum de l'Innovation Numérique. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
