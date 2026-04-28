@@ -1373,7 +1373,49 @@ footer {
     }
 
     footer {
-        padding-bottom: 80px;
+        padding: 3rem 0 100px; /* Espace pour la barre du bas */
+    }
+
+    .footer-content {
+        gap: 2.5rem;
+    }
+
+    .footer-logo .nav-logo {
+        margin-bottom: 1rem;
+        transform: scale(0.9); /* Logo légèrement plus petit */
+    }
+
+    .footer-logo .hero-slogan {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links h4 {
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
     }
 }
 
