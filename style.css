@@ -970,6 +970,8 @@ section {
     border-radius: 12px;
     color: #fff;
     font-size: 1rem;
+    font-family: inherit;
+    line-height: 1.5;
     transition: var(--transition);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -989,8 +991,11 @@ section {
     box-shadow: 0 0 0 4px rgba(46, 204, 138, 0.15);
 }
 
-.form-group input::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
     color: rgba(255, 255, 255, 0.4);
+    font-family: inherit;
+    font-size: 0.95rem;
 }
 
 .grid-2 {
@@ -1234,10 +1239,11 @@ footer {
     }
 
     .hero {
-        padding-top: 80px;
+        padding-top: 100px;
         height: auto;
-        min-height: 100vh;
+        min-height: initial;
         text-align: left;
+        padding-bottom: 40px;
     }
 
     .hero-content {
@@ -1416,6 +1422,12 @@ footer {
     .filter-btn {
         padding: 0.6rem 1.2rem;
         font-size: 0.8rem;
+    }
+
+    .programme-hero,
+    .register-hero {
+        padding: 110px 0 40px !important;
+        min-height: initial !important;
     }
 }
 
