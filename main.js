@@ -104,6 +104,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Prototype Flow Helper
     console.log("FINEO Prototype Loaded: Accueil -> Programme -> Inscription");
 
+    // Mobile Bottom Nav Active State Helper
+    const currentPath = window.location.pathname;
+    const bottomNavItems = document.querySelectorAll('.mobile-bottom-nav .nav-item');
+    
+    bottomNavItems.forEach(item => {
+        const href = item.getAttribute('href');
+        // Handle index.html or root /
+        if (currentPath.endsWith(href) || (href === 'index.html' && (currentPath === '/' || currentPath.endsWith('/')))) {
+            bottomNavItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        }
+    });
+
     // Scroll to Top Logic
     const scrollTopBtn = document.getElementById('scroll-to-top');
     if (scrollTopBtn) {

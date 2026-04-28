@@ -13,7 +13,7 @@
     /* Vert Accentuation */
     --highlight-color: #f5a623;
     /* Orange Mise en valeur */
-    --bg-dark: #0d2347;
+    --bg-dark: #061121;
     /* Fond Sombre Logo */
     --bg-secondary: #f7f8fa;
     /* Gris Clair Fond secondaire */
@@ -23,6 +23,7 @@
     --text-muted: #a0aec0;
     --glass-border: rgba(255, 255, 255, 0.1);
     --glass-bg: rgba(255, 255, 255, 0.05);
+    --text-accent: var(--accent-color);
 
     /* Rhythm & Layout */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -118,7 +119,7 @@ nav {
 }
 
 nav.scrolled {
-    background: rgba(13, 35, 71, 0.95);
+    background: #0d2347;
     padding: 1rem 5%;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
@@ -1112,6 +1113,72 @@ footer {
 }
 
 /* --- Responsive Fixes --- */
+.mobile-logo-text {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+/* Mobile Bottom Nav Styles */
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(13, 35, 71, 0.95);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid var(--glass-border);
+    z-index: 2000;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.mobile-bottom-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    gap: 4px;
+    transition: var(--transition);
+}
+
+.mobile-bottom-nav .nav-item.active {
+    color: var(--accent-color);
+}
+
+.mobile-bottom-nav .nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-bottom-nav .nav-item.active .nav-icon {
+    background: rgba(46, 204, 138, 0.1);
+    border-radius: 8px;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4px;
+}
+
 @media (max-width: 968px) {
     .nav-logo .logo-bottom {
         display: none;
@@ -1135,6 +1202,177 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #scroll-to-top {
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 1rem 5%;
+        background: rgba(13, 35, 71, 0.9);
+    }
+
+    .nav-logo, .nav-actions {
+        display: none;
+    }
+
+    .mobile-logo-text {
+        display: block;
+    }
+
+    .menu-toggle {
+        order: 2;
+        font-size: 1.5rem;
+    }
+
+    .mobile-bottom-nav {
+        display: flex;
+    }
+
+    .hero {
+        padding-top: 80px;
+        height: auto;
+        min-height: 100vh;
+        text-align: left;
+    }
+
+    .hero-content {
+        padding: 0 5%;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-subtitle {
+        display: none;
+    }
+
+    .hero-badge {
+        background: rgba(46, 204, 138, 0.1);
+        color: var(--accent-color);
+        border-color: rgba(46, 204, 138, 0.3);
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-slogan-main {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .v-bar {
+        color: var(--accent-color);
+        font-weight: 800;
+        font-size: 1.2rem;
+        font-style: normal;
+    }
+
+    .hero-description {
+        display: none;
+    }
+
+    .btn-cta {
+        width: 100%;
+        text-align: center;
+        padding: 1.2rem;
+        font-size: 1rem;
+        background: #2ECC8A;
+        color: #0d2347;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .hero-btns .btn-outline {
+        display: none;
+    }
+
+    .stats-section {
+        background: rgba(13, 35, 71, 0.5);
+        margin-top: 2rem;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .stat-card {
+        padding: 1rem 0;
+        background: none;
+        border: none;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+
+    .section-title {
+        text-align: left;
+    }
+
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .underline {
+        margin: 0;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speaker-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+    }
+
+    .speaker-img {
+        display: none;
+    }
+
+    .speaker-card::before {
+        content: attr(data-initials);
+        width: 50px;
+        height: 50px;
+        background: rgba(46, 204, 138, 0.1);
+        color: var(--accent-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-weight: 700;
+        flex-shrink: 0;
+    }
+
+    .speaker-tag {
+        display: none;
+    }
+
+    .speaker-role {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        padding-bottom: 80px;
     }
 }
 
