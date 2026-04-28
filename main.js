@@ -14,13 +14,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const navRight = document.querySelector('.nav-right');
 
     if (mobileMenu && navRight) {
-        mobileMenu.addEventListener('click', () => {
+        mobileMenu.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent immediate closing when clicking the toggle
             navRight.classList.toggle('active');
-            // Toggle icon between hamburger and cross
             const isOpen = navRight.classList.contains('active');
             mobileMenu.innerHTML = isOpen ? '<span>&#10006;</span>' : '<span>&#9776;</span>';
-            // Disable scroll when menu is open
             document.body.style.overflow = isOpen ? 'hidden' : 'initial';
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navRight.classList.contains('active') && !navRight.contains(e.target) && !mobileMenu.contains(e.target)) {
+                navRight.classList.remove('active');
+                mobileMenu.innerHTML = '<span>&#9776;</span>';
+                document.body.style.overflow = 'initial';
+            }
+        });
+
+        // Prevent clicks inside the menu from closing it
+        navRight.addEventListener('click', (e) => {
+            e.stopPropagation();
         });
     }
 
